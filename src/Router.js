@@ -15,7 +15,7 @@ const Router = () => {
 
             <Switch>
 
-                <Route path = "/">
+                <Route exact path = "/">
                    <Carusel />
                 </Route>
                 
