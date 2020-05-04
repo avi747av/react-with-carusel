@@ -30,7 +30,7 @@ const Nav = () => {
         <Container>
             <LinksContainer>
                 <StyledLink to = "/">Caeusel</StyledLink>
-                <StyledLink to = "/home">Home</StyledLink>
+                <StyledLink to = "/modal">modal</StyledLink>
             </LinksContainer>
         </Container>
     )

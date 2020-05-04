@@ -14,13 +14,13 @@ const Router = () => {
                 <Nav />
 
             <Switch>
-                
-                <Route  path = "/home">
-                   <Home />
-                </Route>
 
                 <Route path = "/">
                    <Carusel />
+                </Route>
+                
+                <Route  path = "/modal">
+                   <Home />
                 </Route>
             </Switch>
 
