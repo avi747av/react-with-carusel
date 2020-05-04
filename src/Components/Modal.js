@@ -49,7 +49,7 @@ const ModalBuilder  = (props) => {
         <div>
             <Background className = "background" onClick = { () => setModalShow(false) } open = {modalShow} />
             <img src = {require(`../static/images/${props.name}.png`)} width ="300" alt = "cat"  onClick = { () => setModalShow(true) } />
-            <Modal className = "modal" open = { modalShow } />
+            <Modal className = "modal-window" open = { modalShow } />
         </div>
     )
 }
