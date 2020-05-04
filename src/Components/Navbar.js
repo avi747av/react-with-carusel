@@ -29,8 +29,8 @@ const Nav = () => {
     return (
         <Container>
             <LinksContainer>
-                <StyledLink to = "/">Home</StyledLink>
-                <StyledLink to = "/Carusel">Caeusel</StyledLink>
+                <StyledLink to = "/">Caeusel</StyledLink>
+                <StyledLink to = "/home">Home</StyledLink>
             </LinksContainer>
         </Container>
     )

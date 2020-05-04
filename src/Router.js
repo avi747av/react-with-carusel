@@ -15,11 +15,11 @@ const Router = () => {
 
             <Switch>
                 
-                <Route exact path = "/">
+                <Route  path = "/home">
                    <Home />
                 </Route>
 
-                <Route path = "/carusel">
+                <Route path = "/">
                    <Carusel />
                 </Route>
             </Switch>
