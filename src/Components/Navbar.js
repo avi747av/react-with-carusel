@@ -21,6 +21,8 @@ const LinksContainer = styled.div`
 
 const StyledLink = styled(Link)`
     color: #FFFFFF;
+    text-decoration: none;
+  
 `
 
 
@@ -29,7 +31,8 @@ const Nav = () => {
     return (
         <Container>
             <LinksContainer>
-                <StyledLink to = "/">Caeusel</StyledLink>
+                <StyledLink to = "/">home - carusel1</StyledLink>
+                <StyledLink to = "/carusel">Caeusel2</StyledLink>
                 <StyledLink to = "/modal">modal</StyledLink>
             </LinksContainer>
         </Container>

@@ -24,7 +24,7 @@ const Modal = styled.div`
     transition: -webkit-transform 0.3s ease-out 0s;
     will-change: transform;
     overflow-y: auto;
-    background: #D3D3D3;
+    background: red;
     text-align: center;
     height: 50vw;
     max-height: 90vh;

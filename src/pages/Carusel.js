@@ -1,43 +1,49 @@
-import React from "react";
-import Slider from "react-slick";
-import styled from 'styled-components'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import React from 'react'
+import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 import Modal from '../Components/Modal'
+import styled from 'styled-components'
 
 const Container = styled.div`
-    display: block;
-    margin: 20vw auto;
-    width: 80vw;
-    height: 100vh;
+    width: 100vw;
+    height: 200vh;
 `
 
-// build the carusel. 
-class SimpleSlider extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1
-    };
+const Div = styled.div`
+    display: block;
+    margin: 5vw auto;
+    max-width: 80vw;
+    max-height: 50vh;
+`
+
+const Try = () => {
     return (
         <Container>
-            <Slider {...settings}>
-                <Modal classname = "my-modal" name = "img1" />
-                <Modal classname = "my-modal" name = "img2" />
-                <Modal classname = "my-modal" name = "img3" />
-                <Modal classname = "my-modal" name = "img4" />
-                <Modal classname = "my-modal" name = "img5" />
-                <Modal classname = "my-modal" name = "img6" />
-            </Slider>
+            <Div>
+                <Carousel
+                    slidesPerScroll={2}
+                    slidesPerPage={3}
+                    infinite
+                    arrows
+                >
+                <Modal name = "img1" />
+                <Modal name = "img2" />
+                <Modal name = "img3" />
+                <Modal name = "img4" />
+                <Modal name = "img5" />
+                <Modal name = "img6" />
+                <Modal name = "img1" />
+                <Modal name = "img2" />
+                <Modal name = "img3" />
+                <Modal name = "img4" />
+                <Modal name = "img5" />
+                <Modal name = "img6" />
+                   
+                </Carousel>
+
+            </Div>
         </Container>
-    );
-  }
+    )
 }
 
-export default SimpleSlider
-
-
+export default Try
